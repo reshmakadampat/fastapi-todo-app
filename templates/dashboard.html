@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Todo Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <div class="header">
+
+        <h2>My Todo Dashboard</h2>
+
+        <button onclick="logoutUser()">
+            Logout
+        </button>
+
+    </div>
+
+    <hr>
+
+    <h3>Create Todo</h3>
+
+    <input
+        type="text"
+        id="title"
+        placeholder="Todo Title"
+    >
+
+    <br><br>
+
+    <textarea
+        id="description"
+        placeholder="Description"
+    ></textarea>
+
+    <br><br>
+
+    <button onclick="createTodo()">
+        Create Todo
+    </button>
+
+    <hr>
+
+    <h3>My Todos</h3>
+
+    <div id="todo-list"></div>
+
+    <script src="/static/script.js?v=4"></script>
+
+</body>
+</html>
